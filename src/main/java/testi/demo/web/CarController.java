@@ -22,14 +22,16 @@ public class CarController {
 
 	@RequestMapping("moi2")
 	@ResponseBody
-	public String sayHelloToSomebody2(@RequestParam (name="nimesi", required=false, defaultValue="Muumi") String nimi) {
+	public String sayHelloToSomebody2(
+			@RequestParam(name = "nimesi", required = false, defaultValue = "Muumi") String nimi) {
 		return "Hei " + nimi;
 	}
 
 	@RequestMapping("moi3")
 	@ResponseBody
-	public String sayHelloToSomebody3(@RequestParam (name="nimesi", required=false, defaultValue="Muumi") String nimi,
-	@RequestParam (name="ika") int age) {
+	public String sayHelloToSomebody3(
+			@RequestParam(name = "nimesi", required = false, defaultValue = "Muumi") String nimi,
+			@RequestParam(name = "ika") int age) {
 		return "Hei " + nimi + ", " + age + " vuotta.";
 	}
 }
