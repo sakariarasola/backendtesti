@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class chapter1Controller {
 	
-	@RequestMapping("index")
+	@RequestMapping("indexp")
 	@ResponseBody
 	public String showIndexPage() {
 		return "This is the main page";
@@ -20,7 +20,7 @@ public class chapter1Controller {
 		return "This is the contact page";
 	}
 	
-	@RequestMapping("hello")
+	@RequestMapping("hi")
 	@ResponseBody
 	public String welcomeToThePlaceName(
 			@RequestParam(name = "location", required = false, defaultValue = "Earth") String sijainti,
